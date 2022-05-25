@@ -8,11 +8,10 @@ import java.time.temporal.ChronoUnit;
 
 public class DurationTest01 {
     public static void main(String[] args) {
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime nowAfterTwoYears = LocalDateTime.now().plusYears(2);
         LocalTime time = LocalTime.now();
         LocalTime timeMinus7Hours = LocalTime.now().minusHours(7);
-
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime nowAfterTwoYears = LocalDateTime.now().plusYears(2);
         Duration d1 = Duration.between(now, nowAfterTwoYears);
         Duration d2 = Duration.between(time, timeMinus7Hours);
         Duration d3 = Duration.between(Instant.now(), Instant.now().plusSeconds(1000));
