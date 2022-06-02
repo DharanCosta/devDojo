@@ -5,7 +5,8 @@ import java.io.Serializable;
 public class Aluno implements Serializable {
     private long id;
     private String nome;
-    private String password;
+
+    private transient String password;
 
     @Override
     public String toString() {
