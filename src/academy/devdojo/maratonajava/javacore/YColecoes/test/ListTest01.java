@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.YColecoes.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListTest01 {
+public class  ListTest01 {
     public static void main(String[] args) {
         List nomes = new ArrayList(); //1.4 DO Java
         nomes.add("Dharan");
