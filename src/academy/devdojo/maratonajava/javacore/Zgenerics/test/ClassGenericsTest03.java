@@ -17,7 +17,7 @@ public class ClassGenericsTest03 {
 
         RentalService<Carro> rentalService = new RentalService<>(carrosDisponiveis);
         Carro carro = rentalService.retrieveAvailable();
-        System.out.println("Usando o barco por um mês...");
+        System.out.println("Usando o carro por um mês...");
         rentalService.returningObject(carro);
 
         System.out.println("----------------");
